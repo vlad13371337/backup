@@ -17,6 +17,14 @@ A lightweight custom theme tailored for an English-language advertising agency b
 3. Activate the **Paris Creative Agency** theme.
 4. Optionally assign a custom menu to the "Primary Menu" location and set a featured image for the front page to replace the default hero image.
 
+## Downloading the theme
+
+There are a few easy ways to obtain the theme files:
+
+- **Download the ZIP archive**: If you are viewing this repository on GitHub, click the green **Code** button and choose **Download ZIP**. Extract the archive and move the `paris-creative-agency` folder into `wp-content/themes/`.
+- **Clone with Git**: Run `git clone <repository-url>` and copy the `wp-content/themes/paris-creative-agency` directory into your WordPress site.
+- **Upload via WordPress**: Compress the `paris-creative-agency` directory into a `.zip`, then go to **Appearance → Themes → Add New → Upload Theme** in your WordPress dashboard and upload the archive.
+
 ## Customisation Tips
 
 - Update contact details in `front-page.php` to match your agency information.
