@@ -1,0 +1,265 @@
+/*
+Theme Name: Paris Creative Agency
+Theme URI: https://example.com/paris-creative-agency
+Author: AI Assistant
+Author URI: https://example.com
+Description: A light and modern WordPress theme for a French advertising agency targeting English-speaking clients.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: paris-creative-agency
+Tags: custom-menu, featured-images, full-site-editing, translation-ready
+*/
+
+:root {
+    --color-primary: #1F3C88;
+    --color-secondary: #F2A365;
+    --color-background: #F9FBFF;
+    --color-text: #1E1E24;
+    --color-muted: #6B7280;
+    --font-heading: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-body: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --max-width: 1120px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(31, 60, 136, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+}
+
+.branding .tagline {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--color-muted);
+}
+
+.primary-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primary-navigation a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 6rem 1.25rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.75rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), #152968);
+    color: #ffffff;
+    padding: 0.95rem 1.9rem;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(31, 60, 136, 0.3);
+}
+
+.section {
+    padding: 5rem 1.25rem;
+}
+
+.section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.section:nth-of-type(odd) {
+    background-color: var(--color-background);
+}
+
+.section .section-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 45px rgba(31, 60, 136, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 55px rgba(31, 60, 136, 0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    font-family: var(--font-heading);
+}
+
+.card p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(31, 60, 136, 0.08);
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.contact-section {
+    max-width: 880px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(31, 60, 136, 0.12);
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.contact-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.site-footer {
+    background-color: #111827;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 3rem 1.25rem;
+}
+
+.site-footer .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.site-footer .footer-brand h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+.site-footer .footer-meta {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 720px) {
+    .primary-navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: right;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding-top: 4rem;
+    }
+}
